@@ -1,0 +1,16 @@
+﻿<Window x:Class="nameSplitParse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nameSplitParse"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Background="#FFF9E6E6">
+
+        <TextBox x:Name="fullNameBox" HorizontalAlignment="Left" Height="43" Margin="21,37,0,0" TextWrapping="Wrap" Text="Last Name, Full Name" VerticalAlignment="Top" Width="184" Background="#FFF5B3B3" FontFamily="Times New Roman" FontSize="18.667" OpacityMask="#FFF3B0B0" TextChanged="fullNameBox_TextChanged"/>
+        <Button x:Name="generateNameBtn" Content="Generate Custom Name" HorizontalAlignment="Left" Margin="302,37,0,0" VerticalAlignment="Top" Width="159" Height="43" FontFamily="Times New Roman" FontSize="16" Background="#FFFFD5F7" Click="generateNameBtn_Click"/>
+        <TextBlock x:Name="generatedName" HorizontalAlignment="Left" Margin="21,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="440" Background="#FFFF5656" FontFamily="Times New Roman"/>
+
+    </Grid>
+</Window>
