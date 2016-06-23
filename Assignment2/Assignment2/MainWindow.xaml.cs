@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace nameSplitParse
+namespace Assignment2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,11 +25,20 @@ namespace nameSplitParse
             InitializeComponent();
         }
 
-
-
-        private void generateNameBtn_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-            generatedName = fullNameBox.TextBlock;
+            string fullname = fullNameTextBox.Text;
+            string[] splitName = fullname.Split(',');
+
+            string lastname = splitName[0];
+
+            string firstname = splitName[1];
+
+            string joinname = firstname + "." + lastname;
+
+            lastNameTextBox.Text = lastname;
+            firstNameTextBox.Text = firstname;
+            joinedNameTextBox.Text = joinname;
         }
     }
 }

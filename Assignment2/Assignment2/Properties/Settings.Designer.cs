@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace nameSplitParse.Properties
+namespace Assignment2.Properties
 {
 
 
